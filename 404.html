@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  </head>
+
+  <body>
+	<div class="pages">
+		<div class="content">
+			<h1>404</h1>
+			  <p>Maybe one of our Panda or dog has eaten the page which you are looking for</p>
+			  <p>Don't worry though, our best man is already on the case</p>
+			  <p>Meanwhile,why don't try again by going</p>
+		</div>
+		<button class="btn"><span>Back Home!</span></button>
+	</div>
+  </body>
+  <style>
+
+{
+font-family: sans-serif;
+font-size: 100%;
+color: #444;
+background-color: #ddd;  
+}
+
+body{
+    //font-family: 'Special Elite', cursive;
+  font-family: 'Arvo', serif;
+  background-color: #20405e;
+background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1996e5), to(#20405e));
+background: -webkit-radial-gradient(circle, #1996e5, #20405e);
+background: -moz-radial-gradient(circle, #1996e5, #20405e);
+background: -ms-radial-gradient(circle, #1996e5, #2F2727);
+}
+
+.pages, .pages:before, .pages:after  {
+  background-color: #fff;
+    border: 2px solid #1a1a1a;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.pages  {
+  position: relative;
+  width: 50%;
+  padding: 2em;
+  margin: 50px auto;
+  margin-top: 12%;
+}
+
+.content{
+    margin-bottom:30px;
+}
+.pages:before, .pages:after  {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateZ(3.5deg);
+  -o-transform: rotate(3.5deg);
+  transform: rotateZ(3.5deg);
+  z-index: -1;
+}
+
+.pages:after  {
+  -webkit-transform: rotateZ(-3.5deg);
+  -o-transform: rotate(-3.5deg);
+  transform: rotateZ(-3.5deg);
+}
+
+.pages h1  {
+  font-size: 72px;
+  font-family: 'Special Elite', cursive;
+  font-weight: normal;
+  text-align: center;
+  padding: 0.2em 0;
+  margin: 0;
+}
+
+.pages p  {
+  text-align: left;
+  margin: 1,5em 0;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #1996e5;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+  </style>
+
+</html>
